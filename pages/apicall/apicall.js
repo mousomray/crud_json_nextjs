@@ -14,7 +14,7 @@ export const addquestion = createAsyncThunk("addquestion", async (data, { reject
         return response.data;
     } catch (error) {
         console.log("Error Fetching Add Todo data", error);
-        toast.error("Todo Is Not Added ")
+        toast.error("Question Is Not Added ")
         return rejectWithValue(error.response.data);
     }
 });

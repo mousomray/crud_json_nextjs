@@ -68,7 +68,7 @@ const index = () => {
             }
         } catch (error) {
             console.error("Error submitting data:", error);
-
+            setLoading(false)
         }
     }
 
